@@ -29,6 +29,7 @@ body:
     id: license
     attributes:
       label: How is the tool licensed?
+      multiple: true
       options:
         - Commercial
         - Opensource
