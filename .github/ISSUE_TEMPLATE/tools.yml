@@ -1,0 +1,43 @@
+name: Tools
+description: Add a tool to our directory.
+title: "[Tool]: <name>"
+labels: ["status:pending"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an issue for this tool? 
+      description: Please search to see if an issue exists for this tool.
+      options:
+        - label: I have searched and did not find an issue.
+          required: true 
+  - type: input
+    id: name
+    attributes:
+      label: What is the name of the tool?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What does the tool do?
+  - type: input
+    id: author
+    attributes:
+      label: Who is the author of the tool?
+    validations:
+      required: true
+  - type: dropdown
+    id: license
+    attributes:
+      label: How is the tool licensed?
+      options:
+        - Commercial
+        - Opensource
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Where can more information be found for the tool?
+      description: Share a link to a site, blog or social. 
+    validations:
+      required: true
